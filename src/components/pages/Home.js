@@ -2,7 +2,7 @@
 import landing from "../../images/landing-ps.png";
 
 //Styles
-import "../../styles/layout/_home.scss";
+import "../../styles/_home.scss";
 
 function Home() {
   return (
