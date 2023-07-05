@@ -1,7 +1,10 @@
+//Components
+import Question1 from "./Question1";
+
 function Quiz() {
   return (
     <main>
-      <h2>1. Primera pregunta</h2>
+      <Question1 />
     </main>
   );
 }
