@@ -1,21 +1,28 @@
 //React
+import { Routes, Route } from "react-router-dom";
+
+//Components
+import Header from "./Header";
+import Footer from "./Footer";
+import Home from "./pages/Home";
+import Quiz from "./pages/Quiz";
 
 //Images
-import landing from "../images/landing-ps.png";
 
 //Styles
+import "../styles/App.scss";
 
 function App() {
   return (
     <>
-      <header></header>
-      <main>
-        <h1>¿Qué personaje de Paquita Salas eres?</h1>
-        <img className="img" src={landing} alt="" />
-        <p>Bienvenida a PS Management...</p>
-        <button>Comenzar el test</button>
-      </main>
-      <footer></footer>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/quiz" element={<Quiz />} />
+      </Routes>
+
+      <Footer />
     </>
   );
 }
